@@ -1,7 +1,10 @@
 import React from "react";
-import Question from "./Question";
+import Gratitude from "./QuestionType/Gratitude";
+import Forgive from "./QuestionType/Forgive";
+import FutureValue from "./QuestionType/FutureValue";
+import Acknowledge from "./QuestionType/Acknowledge";
 
-function Questions({steps, setSteps}) {
+function Questions({ steps, setSteps }) {
   const data = [
     {
       question: "GRATITUDE",
@@ -26,41 +29,15 @@ function Questions({steps, setSteps}) {
   ];
   return (
     <div>
-      {steps == 0 && (
-        <Question
-          title={data[0].question}
-          placeholder={data[0].placeholder}
-          count="4"
-          setSteps={setSteps}
-          steps={steps}
-        />
+      {steps === 0 && (
+        <Gratitude data={data} setSteps={setSteps} steps={steps} />
       )}
-      {steps == 1 && (
-        <Question
-          title={data[1].question}
-          placeholder={data[1].placeholder}
-          count="3"
-          setSteps={setSteps}
-          steps={steps}
-        />
+      {steps === 1 && <Forgive data={data} setSteps={setSteps} steps={steps} />}
+      {steps === 2 && (
+        <FutureValue data={data} setSteps={setSteps} steps={steps} />
       )}
-      {steps == 2 && (
-        <Question
-          title={data[2].question}
-          placeholder={data[2].placeholder}
-          count="2"
-          setSteps={setSteps}
-          steps={steps}
-        />
-      )}
-      {steps == 3 && (
-        <Question
-          title={data[3].question}
-          placeholder={data[3].placeholder}
-          count="1"
-          setSteps={setSteps}
-          steps={steps}
-        />
+      {steps === 3 && (
+        <Acknowledge data={data} setSteps={setSteps} steps={steps} />
       )}
     </div>
   );
