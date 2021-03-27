@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Forgive({ data, setSteps, steps }) {
+function Forgive({ data, setSteps, steps, setAnswers, answers }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -29,6 +29,8 @@ function Forgive({ data, setSteps, steps }) {
         count="1"
         setSteps={setSteps}
         steps={steps}
+        setAnswers={setAnswers}
+        answers={answers}
       />
     </div>
   );

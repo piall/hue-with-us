@@ -4,7 +4,7 @@ import Forgive from "./QuestionType/Forgive";
 import FutureValue from "./QuestionType/FutureValue";
 import Acknowledge from "./QuestionType/Acknowledge";
 
-function Questions({ steps, setSteps }) {
+function Questions({ steps, setSteps, setAnswers, answers }) {
   const data = [
     {
       question: "GRATITUDE",
@@ -30,14 +30,40 @@ function Questions({ steps, setSteps }) {
   return (
     <div>
       {steps === 0 && (
-        <Gratitude data={data} setSteps={setSteps} steps={steps} />
+        <Gratitude
+          data={data}
+          setSteps={setSteps}
+          steps={steps}
+          setAnswers={setAnswers}
+          answers={answers}
+        />
       )}
-      {steps === 1 && <Forgive data={data} setSteps={setSteps} steps={steps} />}
+      {steps === 1 && (
+        <Forgive
+          data={data}
+          setSteps={setSteps}
+          steps={steps}
+          setAnswers={setAnswers}
+          answers={answers}
+        />
+      )}
       {steps === 2 && (
-        <FutureValue data={data} setSteps={setSteps} steps={steps} />
+        <FutureValue
+          data={data}
+          setSteps={setSteps}
+          steps={steps}
+          setAnswers={setAnswers}
+          answers={answers}
+        />
       )}
       {steps === 3 && (
-        <Acknowledge data={data} setSteps={setSteps} steps={steps} />
+        <Acknowledge
+          data={data}
+          setSteps={setSteps}
+          steps={steps}
+          setAnswers={setAnswers}
+          answers={answers}
+        />
       )}
     </div>
   );

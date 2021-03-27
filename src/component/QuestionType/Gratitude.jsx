@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Gratitude({ data, setSteps, steps }) {
+function Gratitude({ data, setSteps, steps, setAnswers, answers }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -29,6 +29,8 @@ function Gratitude({ data, setSteps, steps }) {
         count="4"
         setSteps={setSteps}
         steps={steps}
+        setAnswers={setAnswers}
+        answers={answers}
       />
     </div>
   );
