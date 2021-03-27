@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import HealHue from "./HealHue";
 import HomeContent from "./HomeContent";
 
 function Home() {
   const [clickStatus, setClickStatus] = useState(false);
   return (
-    <div>{!clickStatus && <HomeContent setClickStatus={setClickStatus} />}</div>
+    <div>
+      {!clickStatus && <HomeContent setClickStatus={setClickStatus} />}
+      {clickStatus && <HealHue />}
+    </div>
   );
 }
 
