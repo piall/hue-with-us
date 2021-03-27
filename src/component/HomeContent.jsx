@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Button, makeStyles, Typography } from "@material-ui/core";
 import BackgroundImage from "../illustrations/background.svg";
 import Arrow from "../illustrations/arrow.gif";
-import Logo from "../illustrations/logo.svg"
+import Logo from "../illustrations/logo.svg";
 
 const useStyles = makeStyles({
-  unhealed: {},
-  healed: {},
+  // unhealed: {},
+  // healed: {},
   root: {
     display: "flex",
     flexDirection: "column",
@@ -69,7 +69,9 @@ function Home({ setClickStatus }) {
               className={classes.button}
               variant="contained"
               color="secondary"
-              onClick={()=>{setClickStatus(true)}}
+              onClick={() => {
+                setClickStatus(true);
+              }}
             >
               Heal Hue
             </Button>
@@ -95,7 +97,7 @@ function Home({ setClickStatus }) {
             Privacy
           </Typography>
           <p className={classes.sectionContent}>
-            There will be some questions for hue in the <b>HEAL HUE</b>. We
+            There will be some questions for you in the <b>HEAL HUE</b>. We
             don’t store anything. We believe in privacy. Write in fully free
             mind. Happy Hueing 😉️.
           </p>
