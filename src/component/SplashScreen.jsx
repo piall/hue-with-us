@@ -44,12 +44,12 @@ function SplashScreen({ setSplashScreenVisible }) {
   return (
     <div className={classes.root}>
       {firstScreenStatus && (
-        <img src={FirstImage} alt="splash image" className={classes.image} />
+        <img src={FirstImage} alt="splash screen" className={classes.image} />
       )}
       {!firstScreenStatus && (
         <img
           src={SecondImage}
-          alt="splash image colorful"
+          alt="colorful splash screen"
           className={classes.image}
         />
       )}
