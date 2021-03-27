@@ -6,8 +6,8 @@ function HealHue() {
   const [steps, setSteps] = useState(0);
   return (
     <div>
-      {steps != 4 && <Questions steps={steps} setSteps={setSteps} />}
-      {steps == 4 && <Answers />}
+      {steps !== 4 && <Questions steps={steps} setSteps={setSteps} />}
+      {steps === 4 && <Answers />}
     </div>
   );
 }
