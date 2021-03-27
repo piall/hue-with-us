@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hue-with-us/static/css/main.ea122163.chunk.css",
+    "main.js": "/hue-with-us/static/js/main.19ad1d10.chunk.js",
+    "main.js.map": "/hue-with-us/static/js/main.19ad1d10.chunk.js.map",
+    "runtime-main.js": "/hue-with-us/static/js/runtime-main.5324f27e.js",
+    "runtime-main.js.map": "/hue-with-us/static/js/runtime-main.5324f27e.js.map",
+    "static/js/2.8150ae5b.chunk.js": "/hue-with-us/static/js/2.8150ae5b.chunk.js",
+    "static/js/2.8150ae5b.chunk.js.map": "/hue-with-us/static/js/2.8150ae5b.chunk.js.map",
+    "index.html": "/hue-with-us/index.html",
+    "static/css/main.ea122163.chunk.css.map": "/hue-with-us/static/css/main.ea122163.chunk.css.map",
+    "static/js/2.8150ae5b.chunk.js.LICENSE.txt": "/hue-with-us/static/js/2.8150ae5b.chunk.js.LICENSE.txt",
+    "static/media/arrow.109689cd.gif": "/hue-with-us/static/media/arrow.109689cd.gif",
+    "static/media/background.dc13c6a7.svg": "/hue-with-us/static/media/background.dc13c6a7.svg",
+    "static/media/splash_image.05843263.svg": "/hue-with-us/static/media/splash_image.05843263.svg",
+    "static/media/splash_image_colorful.cc4ea1e0.svg": "/hue-with-us/static/media/splash_image_colorful.cc4ea1e0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5324f27e.js",
+    "static/js/2.8150ae5b.chunk.js",
+    "static/css/main.ea122163.chunk.css",
+    "static/js/main.19ad1d10.chunk.js"
+  ]
+}
