@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, makeStyles, Typography } from "@material-ui/core";
 import BackgroundImage from "../illustrations/background.svg";
 import Arrow from "../illustrations/arrow.gif";
+import Logo from "../illustrations/logo.svg"
 
 const useStyles = makeStyles({
   unhealed: {},
@@ -74,7 +75,7 @@ function Home({ setClickStatus }) {
             </Button>
           </div>
           <header className={classes.logo}>
-            <img src="/logo.svg"></img>
+            <img src={Logo}></img>
           </header>
           <Typography className={classes.sectionHeader} variant="h1">
             About
