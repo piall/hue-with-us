@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/hue-with-us/static/css/main.ea122163.chunk.css",
-    "main.js": "/hue-with-us/static/js/main.97f8fef6.chunk.js",
-    "main.js.map": "/hue-with-us/static/js/main.97f8fef6.chunk.js.map",
+    "main.css": "/hue-with-us/static/css/main.cba147af.chunk.css",
+    "main.js": "/hue-with-us/static/js/main.28851a10.chunk.js",
+    "main.js.map": "/hue-with-us/static/js/main.28851a10.chunk.js.map",
     "runtime-main.js": "/hue-with-us/static/js/runtime-main.5324f27e.js",
     "runtime-main.js.map": "/hue-with-us/static/js/runtime-main.5324f27e.js.map",
-    "static/js/2.8150ae5b.chunk.js": "/hue-with-us/static/js/2.8150ae5b.chunk.js",
-    "static/js/2.8150ae5b.chunk.js.map": "/hue-with-us/static/js/2.8150ae5b.chunk.js.map",
+    "static/js/2.b8d1a568.chunk.js": "/hue-with-us/static/js/2.b8d1a568.chunk.js",
+    "static/js/2.b8d1a568.chunk.js.map": "/hue-with-us/static/js/2.b8d1a568.chunk.js.map",
     "index.html": "/hue-with-us/index.html",
-    "static/css/main.ea122163.chunk.css.map": "/hue-with-us/static/css/main.ea122163.chunk.css.map",
-    "static/js/2.8150ae5b.chunk.js.LICENSE.txt": "/hue-with-us/static/js/2.8150ae5b.chunk.js.LICENSE.txt",
+    "static/css/main.cba147af.chunk.css.map": "/hue-with-us/static/css/main.cba147af.chunk.css.map",
+    "static/js/2.b8d1a568.chunk.js.LICENSE.txt": "/hue-with-us/static/js/2.b8d1a568.chunk.js.LICENSE.txt",
     "static/media/arrow.109689cd.gif": "/hue-with-us/static/media/arrow.109689cd.gif",
     "static/media/background.dc13c6a7.svg": "/hue-with-us/static/media/background.dc13c6a7.svg",
+    "static/media/colorful_background.d69ef59c.svg": "/hue-with-us/static/media/colorful_background.d69ef59c.svg",
     "static/media/logo.c009bf37.svg": "/hue-with-us/static/media/logo.c009bf37.svg",
+    "static/media/question_acknowledge_background.8afc22eb.svg": "/hue-with-us/static/media/question_acknowledge_background.8afc22eb.svg",
+    "static/media/question_forgive_background.9abf50ff.svg": "/hue-with-us/static/media/question_forgive_background.9abf50ff.svg",
+    "static/media/question_future_value_background.8afc22eb.svg": "/hue-with-us/static/media/question_future_value_background.8afc22eb.svg",
     "static/media/splash_image.05843263.svg": "/hue-with-us/static/media/splash_image.05843263.svg",
     "static/media/splash_image_colorful.cc4ea1e0.svg": "/hue-with-us/static/media/splash_image_colorful.cc4ea1e0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5324f27e.js",
-    "static/js/2.8150ae5b.chunk.js",
-    "static/css/main.ea122163.chunk.css",
-    "static/js/main.97f8fef6.chunk.js"
+    "static/js/2.b8d1a568.chunk.js",
+    "static/css/main.cba147af.chunk.css",
+    "static/js/main.28851a10.chunk.js"
   ]
 }
