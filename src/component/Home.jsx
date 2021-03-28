@@ -6,8 +6,8 @@ function Home() {
   const [clickStatus, setClickStatus] = useState(false);
   return (
     <div>
-      {!clickStatus && <HomeContent setClickStatus={setClickStatus} />}
-      {clickStatus && <HealHue />}
+      {!clickStatus && <HomeContent setClickStatus={setClickStatus} colorful="false"/>}
+      {clickStatus && <HealHue/>}
     </div>
   );
 }

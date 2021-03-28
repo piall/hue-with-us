@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FirstImage from "../illustrations/splash_image.svg";
-import SecondImage from "../illustrations/splash_image_colorful.svg";
+import FirstImage from "../assets/splash_image.svg";
+import SecondImage from "../assets/splash_image_colorful.svg";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({

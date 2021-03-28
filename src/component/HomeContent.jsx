@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, makeStyles, Typography } from "@material-ui/core";
-import BackgroundImage from "../illustrations/background.svg";
-import Arrow from "../illustrations/arrow.gif";
-import Logo from "../illustrations/logo.svg";
+import BackgroundImage from "../assets/background.svg";
+import BackgroundColorfulImage from "../assets/colorful_background.svg";
+import Arrow from "../assets/arrow.gif";
+import Logo from "../assets/logo.svg";
 
 const useStyles = makeStyles({
-  // unhealed: {},
-  // healed: {},
   root: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     background: "#E3E3E3",
+    backgroundImage: `url(${BackgroundImage})`,
+    backgroundSize: "400px 400px",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "98% 100%",
+    backgroundAttachment: "fixed",
   },
   logo: {
     marginBottom: "10px",
@@ -33,12 +37,6 @@ const useStyles = makeStyles({
     fontFamily: "Open Sans",
     fontWeight: "800",
   },
-  sectionContainer: {
-    backgroundImage: `url(${BackgroundImage})`,
-    backgroundSize: "400px 400px",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "90% 90%",
-  },
   section: {
     height: "100vh",
     display: "flex",
@@ -52,57 +50,91 @@ const useStyles = makeStyles({
     color: "white",
   },
   sectionContent: {
-    width: "653px",
+    maxWidth: "653px",
     fontFamily: "Open Sans",
+    padding: "20px",
+    textAlign: "center",
+    fontSize: "18px",
+  },
+  colorfulBackground: {
+    background: "#6C63FF",
+    backgroundImage: `url(${BackgroundColorfulImage})`,
+    backgroundSize: "400px 400px",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "98% 100%",
+    backgroundAttachment: "fixed",
+    color: "white",
+  },
+  colorfulButton: {
+    background: "#F47F28",
+    color: "white",
+    padding: "10px",
+    fontSize: "35px",
+    fontFamily: "Open Sans",
+    fontWeight: "800",
   },
 });
 
-function Home({ setClickStatus }) {
+function Home({ setClickStatus, colorful }) {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <div className={classes.sectionContainer}>
-        <section className={classes.section}>
-          <div className={classes.buttonContainer}>
-            <img className={classes.arrow} src={Arrow} />
+    <div
+      className={`${classes.root} ${
+        colorful === "true" ? `${classes.colorfulBackground}` : ""
+      }`}
+    >
+      <section className={classes.section}>
+        <div className={classes.buttonContainer}>
+          {colorful !== "true" && (
+            <>
+              <img className={classes.arrow} src={Arrow} alt="arrow" />
+              <Button
+                className={classes.button}
+                variant="contained"
+                color="secondary"
+                onClick={() => {
+                  setClickStatus(true);
+                }}
+              >
+                Heal Hue
+              </Button>
+            </>
+          )}
+          {colorful === "true" && (
             <Button
-              className={classes.button}
+              className={classes.colorfulButton}
               variant="contained"
               color="secondary"
-              onClick={() => {
-                setClickStatus(true);
-              }}
+              disabled
             >
-              Heal Hue
+              Healed Hue ❤️
             </Button>
-          </div>
-          <header className={classes.logo}>
-            <img src={Logo}></img>
-          </header>
-          <Typography className={classes.sectionHeader} variant="h1">
-            About
-          </Typography>
-          <p className={classes.sectionContent}>
-            Hue refers to the origin of color we can see. Without color in our
-            life, our life is dull. We can define our life with colors from
-            different shades of color. When we become depressed or sad we start
-            to lose the hue in our life. When we are happy we get the original
-            color of ourselves and the hue is that thing the original color.
-          </p>
-        </section>
-      </div>
-      <div className={classes.sectionContainer}>
-        <section className={classes.section}>
-          <Typography className={classes.sectionHeader} variant="h1">
-            Privacy
-          </Typography>
-          <p className={classes.sectionContent}>
-            There will be some questions for you in the <b>HEAL HUE</b>. We
-            don’t store anything. We believe in privacy. Write in fully free
-            mind. Happy Hueing 😉️.
-          </p>
-        </section>
-      </div>
+          )}
+        </div>
+        <header className={classes.logo}>
+          <img src={Logo} alt="logo"></img>
+        </header>
+        <Typography className={classes.sectionHeader} variant="h1">
+          About
+        </Typography>
+        <p className={classes.sectionContent}>
+          Hue refers to the origin of color we can see. Without color in our
+          life, our life is dull. We can define our life with colors by
+          different shades of color. When we become depressed or sad we start to
+          lose the hue in our life. When we are happy we get the original color
+          of ourselves and the hue is that thing the original color.
+        </p>
+      </section>
+      <section className={classes.section}>
+        <Typography className={classes.sectionHeader} variant="h1">
+          Privacy
+        </Typography>
+        <p className={classes.sectionContent}>
+          There will be some questions for you in the <b>HEAL HUE</b>. We don’t
+          store anything. We believe in privacy. Write in fully free mind. Happy
+          Hueing 😉️.
+        </p>
+      </section>
     </div>
   );
 }

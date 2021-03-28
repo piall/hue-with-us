@@ -3,6 +3,7 @@ import Gratitude from "./QuestionType/Gratitude";
 import Forgive from "./QuestionType/Forgive";
 import FutureValue from "./QuestionType/FutureValue";
 import Acknowledge from "./QuestionType/Acknowledge";
+import Question from "./Question";
 
 function Questions({ steps, setSteps, setAnswers, answers }) {
   const data = [
@@ -65,6 +66,7 @@ function Questions({ steps, setSteps, setAnswers, answers }) {
           answers={answers}
         />
       )}
+      
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import Question from ".././Question";
-import BackgroundImage from "../../illustrations/question_acknowledge_background.svg";
+import BackgroundImage from "../../assets/question_acknowledge_background.svg";
 
 const useStyles = makeStyles({
   root: {
@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "98% 100%",
     background: "rgba(108, 99, 255, 0.75)",
+    backgroundAttachment: "fixed",
   },
 });
 

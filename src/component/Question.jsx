@@ -32,7 +32,6 @@ const useStyles = makeStyles({
       fontWeight: "300",
       fontSize: "20px",
       textAlign: "center",
-      transform: "translateY(4vh)",
     },
     marginBottom: "10px",
   },
@@ -43,10 +42,16 @@ const useStyles = makeStyles({
     color: "white",
   },
   button: {
-    fontFamily: "Roboto Mono",
+    fontFamily: "Open Sans",
     fontWeight: "bold",
     textTransform: "capitalize",
+    fontSize: "22px"
   },
+  message: {
+    fontFamily: "Open Sans",
+    marginTop: "10px",
+    color: "red"
+  }
 });
 function Question({
   title,
@@ -59,9 +64,14 @@ function Question({
 }) {
   const classes = useStyles();
   const [value, setValue] = useState("");
+  const [errorStatus, setErrorStatus] = useState(false);
   const submitAnswers = () => {
-    setAnswers([...answers, value]);
-    setSteps(steps + 1);
+    if (value !== "") {
+      setAnswers([...answers, value]);
+      setSteps(steps + 1);
+    } else {
+      setErrorStatus(true)
+    }
   };
   const onChangeHandler = (event) => {
     console.log(event.target.value);
@@ -91,6 +101,7 @@ function Question({
       >
         next
       </Button>
+      {errorStatus && <Typography className={classes.message}>Please write atleast something</Typography>}
     </div>
   );
 }

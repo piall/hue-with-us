@@ -15,7 +15,7 @@ function HealHue() {
           answers={answers}
         />
       )}
-      {steps === 4 && <Answers answers={answers} />}
+      {steps === 4 && <Answers answers={answers}/>}
     </div>
   );
 }
